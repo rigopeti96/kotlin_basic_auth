@@ -18,7 +18,7 @@ class KotlinBasicAuthApplication: CommandLineRunner{
     private lateinit var repository: UserRepository
 
     @Autowired
-    private val passwordEncoder = PasswordEncoderFactories.createDelegatingPasswordEncoder()
+    private lateinit var passwordEncoder: PasswordEncoder
 
     @Throws(Exception::class)
     override fun run(vararg args: String?) {

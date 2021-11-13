@@ -29,9 +29,9 @@ class HelloController {
     }
 
     // Can be called by admins only
-    /*@GetMapping("/admin_hello")
-    @Secured(User.ROLE_ADMIN)
+    @GetMapping("/admin_hello")
+    @Secured("ROLE_ADMIN")
     fun adminHello(): String {
         return "Wow, you are an admin"
-    }*/
+    }
 }
